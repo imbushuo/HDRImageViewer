@@ -303,7 +303,7 @@ void DXRenderer::DeviceResources::CreateWindowSizeDependentResources()
         swapChainDesc.SwapEffect = DXGI_SWAP_EFFECT_FLIP_SEQUENTIAL; // All Windows Runtime apps must use this SwapEffect.
         swapChainDesc.Flags = 0;
         swapChainDesc.Scaling = DXGI_SCALING_STRETCH;
-        swapChainDesc.AlphaMode = DXGI_ALPHA_MODE_IGNORE;
+        swapChainDesc.AlphaMode = DXGI_ALPHA_MODE_PREMULTIPLIED;
 
         // This sequence obtains the DXGI factory that was used to create the Direct3D device above.
         ComPtr<IDXGIDevice3> dxgiDevice;

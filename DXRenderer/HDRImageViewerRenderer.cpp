@@ -935,7 +935,7 @@ void HDRImageViewerRenderer::Draw()
 
     d2dContext->BeginDraw();
 
-    d2dContext->Clear(D2D1::ColorF(D2D1::ColorF::Black));
+    d2dContext->Clear();
 
     d2dContext->SetTransform(m_deviceResources->GetOrientationTransform2D());
 
